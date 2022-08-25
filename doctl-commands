@@ -1,0 +1,26 @@
+# To create a Kubernetes Cluster
+doctl kubernetes cluster create <cluster-name> --1-clicks <List-of-1-click-apps> --count <no.-of-nodes> --region <region-name>  --size <droplet-size> --vpc-uuid <if-you-want-to-create-a-cluster-within-a-vpc> --access-token <Your-API-token> --api-url <your-api-url>
+
+# To fetch the list of 1-click apps
+doctl 1-click list --type kubernetes --access-token <Your-API-token> --api-url <your-api-url>
+
+# To fetch the list of droplet sizes
+doctl kubernetes options regions --access-token <Your-API-token> --api-url <your-api-url>
+
+# To fetch the list of droplet sizes
+doctl kubernetes options sizes --access-token <Your-API-token> --api-url <your-api-url>
+
+# To fetch the Kubernetes versions
+doctl kubernetes options versions --access-token <Your-API-token> --api-url <your-api-url>
+
+# To delete a kubernetes cluster
+doctl kubernetes cluster delete --force <cluster-name-or-id> --access-token <Your-API-token> --api-url <your-api-url>
+
+# To fetch the details of a kubernetes cluster
+doctl kubernetes cluster get <cluster-name-or-id> --access-token <Your-API-token> --api-url <your-api-url>
+
+# To save the cluster's kubeconfig to the local
+doctl kubernetes cluster kubeconfig save <cluster-name-or-id> --access-token <Your-API-token> --api-url <your-api-url>
+
+# To initiate the authorization
+doctl auth init --access-token <Your-API-token> --api-url <your-api-url>

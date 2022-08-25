@@ -1,0 +1,5 @@
+version: "3.9"
+services:
+  kbench:
+    build: .
+    image: "neelakurinji/kbench-base-image:latest"

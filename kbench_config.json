@@ -5,7 +5,7 @@
     "doks_region": "blr1",
     "droplet_size": "s-2vcpu-4gb",
     "vpc_uuid": "",
-    "access_token": "dop_v1_d3edd988cc1b9e9eb9cde173975081575cedf8dfc36b95835feaa961db9d2764",
+    "access_token": "my token",
     "api_url": "https://api.digitalocean.com",
     "kbench_tests": "cp_heavy_12client"
 
